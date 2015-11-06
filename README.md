@@ -22,4 +22,4 @@
 
 ## Screencast
 * ![ScreenCast->1](/HW-3.mov)
-* ![ScreenCast->2](/HW3-Recent.mov)
+* ![ScreenCast->2(Contains "/recent")](/HW3-Recent.mov)
