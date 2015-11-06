@@ -55,7 +55,7 @@ app.post("/set", function(req, res){
 	var key = 'key'+Math.round(Math.random()*(1000));
     client.set(key, "this message will self-destruct in 10 seconds");
     last_key = key;
-    // client.expire(key, 10);
+    client.expire(key, 10);
     res.send("Key Set!");
 });
 
