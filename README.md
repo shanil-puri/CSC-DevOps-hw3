@@ -8,16 +8,16 @@
 
 ### Functionality:
 
-*Basic set/get, request, upload functionality
-**As described in https://github.com/CSC-DevOps/Queues
+#####Basic set/get, request, upload functionality
+* As described in https://github.com/CSC-DevOps/Queues
 
-*Run an additional instance of the service layer (main.js) on a different port (e.g., 3001):
-** Screencast has instances running on 3000 and 3001.
+#####Run an additional instance of the service layer (main.js) on a different port (e.g., 3001):
+* Screencast has instances running on 3000 and 3001.
 
-*Creating Proxy and Using Redis to store servers.
-** Proxy created using http-proxy. 
-** Redis used to store available servers.
-** Head contains address of node to be used.
+#####Creating Proxy and Using Redis to store servers.
+* Proxy created using http-proxy. 
+* Redis used to store available servers.
+* Head contains address of node to be used.
 
 
 ## Screencast for Post-Commit Git Hook:
