@@ -4,7 +4,7 @@ var express = require('express')
 var fs      = require('fs')
 var app = express()
 // REDIS
-//var client = redis.createClient(6379, '127.0.0.1', {})
+var client = redis.createClient(6379, '127.0.0.1', {})
 
 ///////////// WEB ROUTES
 
@@ -47,12 +47,17 @@ app.use(function(req, res, next)
 // 	}
 // })
 
-// HTTP SERVER
-// var server = app.listen(3000, function () {
+HTTP SERVER
+var server = app.listen(3000, function () {
 
-//   var host = server.address().address
-//   var port = server.address().port
+  var host = server.address().address
+  var port = server.address().port
 
-//   console.log('Example app listening at http://%s:%s', host, port)
-// })
+  console.log('Example app listening at http://%s:%s', host, port)
+})
+
+app.get('/', function(req, res) {
+  res.send('hello world')
+})
+
 
